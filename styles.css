@@ -1,0 +1,210 @@
+body {
+  text-align: center;
+  background: #FFE5E5;
+  margin: 5vw;
+  font-family: 'Young Serif', serif;
+}
+
+#intro {
+  color:#746AB6;
+  font-size: large;
+}
+
+input[type="radio"] {
+  appearance: none;
+  -webkit-appearance:none;
+}
+
+.radios label {
+  display: flex;
+  cursor: pointer;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+}
+
+#partA .radios label input:checked + span:before {
+  box-shadow: inset 0 0 0 0.4375em #746AB6;
+}
+
+#partB .radios label input:checked + span:before {
+  box-shadow: inset 0 0 0 0.4375em #E97997;
+}
+
+#partC .radios label input:checked + span:before {
+  box-shadow: inset 0 0 0 0.4375em #418DC8;
+}
+
+.radios label span {
+  display: flex;
+  align-items: center;
+  padding: 0.375em 0.75em 0.375em 0.375em;
+  border-radius: 99em;
+  transition: 0.25s ease;
+  color: #414181;
+}
+
+.radios label span:hover {
+  background-color: #FFE5E5;
+}
+
+.radios label span:before {
+  display: flex;
+  flex-shrink: 0;
+  content: "";
+  background-color: #fff;
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;
+  margin-right: 0.375em;
+  transition: 0.25s ease;
+  box-shadow: inset 0 0 0 0.125em #00005c;
+}
+
+.radios label input:checked + span {
+  color: white;
+}
+
+#partA .radios label input:checked + span {
+  background-color: #3B2E89;
+}
+
+#partB .radios label input:checked + span {
+  background-color: #b32b4f;
+}
+
+#partC .radios label input:checked + span {
+  background-color: #0766ad;
+}
+
+.wrapper {
+  border: 10px solid red;
+}
+
+div {
+  display: inline-block;
+}
+
+#clickyButton {
+  display: inline-block;
+  margin: 1vw;
+  padding: 2vw;
+  background-color: #756ab6;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  font-family: 'Young Serif', serif;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+h1 {
+  font-style: normal;
+  font-size: 3vw;
+  color:#b32b4f;
+}
+
+box {
+  display: inline-block;
+}
+
+#preBox {
+  color: #756ab6;
+  font-style: normal;
+  font-size: 3vw;
+}
+
+#midBox {
+  color: #b32b4f;
+  font-style: normal;
+  font-size: 3vw;
+}
+
+#sufBox {
+  color: #0766ad;
+  font-style: normal;
+  font-size: 3vw;
+}
+
+.radios {
+  border: none;
+}
+
+.fieldset {
+  border: none;
+}
+
+footer {
+  color: #FCBF49;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1vw;
+  font-size: 3vw;
+}
+
+a {
+  color: inherit;
+}
+
+.genSection {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  font-size: 1.25vw;
+  height: auto;
+  margin: 25px;
+  overflow: auto;
+  padding: 1vw;
+  width: auto;
+}
+
+#flexing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+#partA, #partB, #partC {
+  border: none;
+  text-align: left;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    margin: .5vw;
+  }
+
+  .box {
+    padding: 4%;
+  }
+  
+  #clickyButton {
+    padding: 4vw;
+    font-size: 6vw;
+  }
+
+  #flexing {
+    flex-direction: column;
+  }
+
+  .genSection {
+    font-size: 2.75em;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+
+  #headingSection {
+    margin: 5vw;
+  }
+
+  #preBox, #midBox, #sufBox {
+    font-size: 7vw;
+    text-align: center;
+  }
+}

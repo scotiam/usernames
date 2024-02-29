@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body onload="usernamegenerator()">
+  <div id="headingSection">
+    <h1>pretty username generator</h1>
+    <p id="intro">click one of each category (or just first and second words), and then hit generate at the bottom to generate one random username of your selected categories.  click again to generate another.  you can change a category at any time.  to clear all selections, simply refresh your browser window.</p>
+    <p>example use cases: instagram, tiktok, gmail, youtube channel, small business name</p>
+  </div>
+    <div id="flexing">
+    <div class="genSection">
+      <p>first word category</p>
+      <form>
+        <fieldset id="partA">
+          <div class="radios">
+            <label><input type="radio" id="animals" name="firstPart"><span>animals</span></label>
+            <label><input type="radio" id="bookPrefix" name="firstPart"><span>books</span></label>
+            <label><input type="radio" id="colorPrefix" name="firstPart"><span>colors</span></label>
+            <label><input type="radio" id="craftPrefix" name="firstPart"><span>crafts/art</span></label>
+            <label><input type="radio" id="foodPrefix" name="firstPart"><span>food & drink</span></label>
+            <label><input type="radio" id="generalPrefix" name="firstPart"><span>general</span></label>
+            <label><input type="radio" id="journalPrefix" name="firstPart"><span>journaling</span></label>
+            <label><input type="radio" id="lifestylePrefix" name="firstPart"><span>lifestyle</span></label>
+            <label><input type="radio" id="plantPrefix" name="firstPart"><span>plants</span></label>
+            <label><input type="radio" id="studyPrefix" name="firstPart"><span>study</span></label>
+            <label><input type="radio" id="techPrefix" name="firstPart"><span>technology</span></label>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="genSection">
+      <p>middle word/separator</p>
+      <form>
+        <fieldset id="partB">
+          <div class="radios">
+            <label><input type="radio" id="middleWord" name="midPart"><span>basic words</span></label>
+            <label><input type="radio" id="symbol" name="midPart"><span>symbols</span></label>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+    <div class="genSection">
+      <p>second word category</p>
+      <form>
+        <fieldset id="partC">
+          <div class="radios">
+            <label><input type="radio" id="animalSuffix" name="secondPart"><span>animals</span></label>
+            <label><input type="radio" id="bookSuffix" name="secondPart"><span>books</span></label>
+            <label><input type="radio" id="colorSuffix" name="secondPart"><span>colors</span></label>
+            <label><input type="radio" id="craftSuffix" name="secondPart"><span>crafts/art</span></label>
+            <label><input type="radio" id="foodSuffix" name="secondPart"><span>food & drink</span></label>
+            <label><input type="radio" id="generalSuffix" name="secondPart"><span>general</span></label>
+            <label><input type="radio" id="journalSuffix" name="secondPart"><span>journaling</span></label>
+            <label><input type="radio" id="lifestyleSuffix" name="secondPart"><span>lifestyle</span></label>
+            <label><input type="radio" id="plantSuffix" name="secondPart"><span>plants</span></label>
+            <label><input type="radio" id="studySuffix" name="secondPart"><span>study</span></label>
+            <label><input type="radio" id="techSuffix" name="secondPart"><span>technology</span></label>
+          </div>
+        </fieldset>
+      </form>
+    </div><br>
+    </div>
+    <div class="box">
+      <form>
+        <input type="button" onclick="usernamegenerator();" id="clickyButton" value="generate" />
+      </form>
+    </div>
+    <br>
+    <div class="box" id="boxybox">
+      <!-- <p id="nameBox"></p> -->
+      <span id="preBox"></span><span id="midBox"></span><span id="sufBox"></span>
+    </div>
+  <script src="script.js"></script>
+  <script src="animals.js"></script>
+  <script src="books.js"></script>
+  <script src="colors.js"></script>
+  <script src="crafts.js"></script>
+  <script src="food.js"></script>
+  <script src="general.js"></script>
+  <script src="journal.js"></script>
+  <script src="lifestyle.js"></script>
+  <script src="middle.js"></script>
+  <script src="plants.js"></script>
+  <script src="study.js"></script>
+  <script src="tech.js"></script>
+</body>
+
+</html>

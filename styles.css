@@ -196,7 +196,7 @@ a {
   }
 
   h1 {
-    font-size: 4vw;
+    font-size: 6vw;
   }
 
   #headingSection {
@@ -206,5 +206,13 @@ a {
   #preBox, #midBox, #sufBox {
     font-size: 7vw;
     text-align: center;
+  }
+
+  #intro {
+    font-size: 4vw;
+  }
+
+  #uses {
+    font-size: 3.5vw;
   }
 }

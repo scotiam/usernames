@@ -12,8 +12,6 @@ function usernamegenerator() {
   var middle_array = [];
   var suffix_array = [];
 
-  document.getElementById( 'boxybox' ).scrollIntoView();
-
   function prefixGen() {
     if (document.getElementById("animals").checked) {
       var animal = randomizeIt(animals);
